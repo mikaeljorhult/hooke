@@ -1,5 +1,5 @@
 /*!
- * Parseltongue 0.1.0
+ * Hooke 0.1.0
  * Frontend error logging tool.
  *
  * @author Mikael Jorhult
@@ -50,4 +50,4 @@
 	
 	// Attach error handler to window.
 	window.onerror = o.onerror;
-} )( window.Parseltongue = window.Parseltongue || {} );
+} )( window.Hooke = window.Hooke || {} );
