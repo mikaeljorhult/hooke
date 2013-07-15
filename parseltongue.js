@@ -1,3 +1,10 @@
+/*!
+ * Parseltongue 0.1.0
+ * Frontend error logging tool.
+ *
+ * @author Mikael Jorhult
+ * @license http://mikaeljorhult.mit-license.org MIT
+ */
 ;( function( o, undefined ) {
 	// Initiate variables.
 	o.base = window.location.protocol + '//' + window.location.host + '/' + '?action=log';
@@ -43,4 +50,4 @@
 	
 	// Attach error handler to window.
 	window.onerror = o.onerror;
-} )( window.parselTongue = window.parselTongue || {} );
+} )( window.Parseltongue = window.Parseltongue || {} );
