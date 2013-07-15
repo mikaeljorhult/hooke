@@ -43,4 +43,4 @@
 	
 	// Attach error handler to window.
 	window.onerror = o.onerror;
-} )( window.errorLog = window.errorLog || {} );
+} )( window.parselTongue = window.parselTongue || {} );
