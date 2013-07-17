@@ -1,5 +1,5 @@
 /*!
- * Hooke 0.1.0
+ * Hooke 0.1.1
  * Frontend error logging tool.
  *
  * @author Mikael Jorhult
@@ -24,6 +24,18 @@
 		
 		// Tell window that error has been handled.
 		return true;
+	}
+	
+	// Error handler.
+	o.log = function( message ) {
+		// Build entry from parameters.
+		var logEntry = {
+			message: message,
+			type: 'log'
+		};
+		
+		// Send message to server.
+		o.save( logEntry );
 	}
 	
 	// Make server request.
